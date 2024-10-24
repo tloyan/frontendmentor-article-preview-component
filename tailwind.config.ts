@@ -10,6 +10,14 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: "var(--font-manrope)"
+      },
+      colors: {
+        primary: {
+          1: "hsl(217, 19%, 35%)",
+          2: "hsl(214, 17%, 51%)",
+          3: "hsl(212, 23%, 69%)",
+          4: "hsl(210, 46%, 95%)"
+        },
       }
     },
   },
