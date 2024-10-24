@@ -16,7 +16,7 @@ const article = {
 
 export default function Home() {
   return (
-    <main className="bg-primary-4 flex min-h-full flex-col items-center justify-center px-6 pt-[74px]">
+    <main className="bg-primary-4 flex min-h-full flex-col items-center justify-center px-6 pt-[74px] md:pt-0">
       <ArticlePreview {...article} />
     </main>
   );
