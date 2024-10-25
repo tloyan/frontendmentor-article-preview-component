@@ -19,7 +19,7 @@ export function ArticlePreview({
   publishDate: string;
 }) {
   return (
-    <article className="flex flex-col rounded-[10px] bg-white shadow-[0_40px_40px_-10px_rgba(201,213,225,.5)] md:max-h-[280px] md:max-w-[730px] md:flex-row">
+    <article className="flex flex-col rounded-[10px] bg-white shadow-[0_40px_40px_-10px_rgba(201,213,225,.5)] max-w-[400px] md:max-h-[280px] md:max-w-[730px] md:flex-row">
       <div className="relative w-full shrink-0 overflow-hidden rounded-t-[10px] md:h-[280px] md:w-[285px] md:rounded-none md:rounded-l-[10px]">
         <Image
           src={imgSrc}
