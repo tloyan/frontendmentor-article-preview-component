@@ -17,19 +17,19 @@ export function ArticleFooter({
   const [active, setActive] = useState(false);
   return (
     <div className="relative">
-      <div className="flex items-center justify-between px-8 pb-5 md:p-0">
+      <div className="flex items-center justify-between px-8 pb-5 lg:p-0">
         <ArticleAuthor author={author} publishDate={publishDate} />
         <div>
           <div
             className={cn(
               "bg-primary-1 absolute inset-0 hidden items-center justify-between rounded-b-[.625rem] px-8",
-              " md:inset-auto md:-top-20 md:right-[-109px] md:rounded-[.625rem] md:px-9 md:py-[18px]",
+              "lg:inset-auto lg:-top-20 lg:right-[-109px] lg:rounded-[.625rem] lg:px-9 lg:py-[18px]",
               active && "flex",
             )}
           >
             <ShareWithIcons />
-            <ShareButton active={active} onClick={() => setActive(!active)} className="md:hidden" />
-            <div className="bg-primary-1 absolute -bottom-2 left-[calc(50%-8px)] h-4 w-4 origin-center rotate-45 hidden md:block" />
+            <ShareButton active={active} onClick={() => setActive(!active)} className="lg:hidden" />
+            <div className="bg-primary-1 absolute -bottom-2 left-[calc(50%-8px)] h-4 w-4 origin-center rotate-45 hidden lg:block" />
           </div>
           <ShareButton active={active} onClick={() => setActive(!active)} />
         </div>
